@@ -2,28 +2,26 @@
 
 /* PLAYGROUND
 
-alert(2 > 1);
-alert(1 > 2);
-alert(2 == 1);
-alert(2 != 1);
+alert('Hello');
 
-alert('Z' > 'A');
-alert('A' == 'a');
-alert('A' != 'a');
-alert('A' > 'a');
-alert('A' < 'a');
+let defaultAge = 35;
+let age = prompt('How old are you?', defaultAge);
+if (age === null)
+{
+    age = defaultAge;
+}
+alert(`You are ${age} years old!`);
 
-let a = 0;
-let b = "0";
-alert("a == b: " + (a == b));
-alert("a === b: " + (a === b));
+let isBoss = confirm("Are you the Boss?");
+alert(isBoss);
 
 */
 
-alert('5 > 4:' +  (5 > 4));                                 // true
-alert('"apple" > "pineapple":' + ("apple" > "pineapple"));  // false
-alert('"2" > "12":' + ("2" > "12"));                        // true
-alert('undefined == null:' + (undefined == null));          // true
-alert('undefined === null:' + (undefined === null));        // false
-alert('null == "\n0\n":' + (null == "\n0\n"));              // false
-alert('null === +"\n0\n":' + (null === +"\n0\n"));          // false
+// Task 1
+let defaultName = "DEFAULT";
+let name = prompt("What is your name?", defaultName);
+if (name === null)
+{
+    name = defaultName;
+}
+alert(`Your name is ${name}`);
